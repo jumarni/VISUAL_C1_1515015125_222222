@@ -136,6 +136,11 @@ public class posttest2 extends javax.swing.JFrame {
         txtag.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "ISLAM", "KRISTEN", "HINDU", "BUDHA", " " }));
 
         txtst.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "KAWIN", "BELUM KAWIN", "JOMBLO", " " }));
+        txtst.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtstActionPerformed(evt);
+            }
+        });
 
         txtgd.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "A", "B", "AB", "O" }));
         txtgd.addActionListener(new java.awt.event.ActionListener() {
@@ -185,7 +190,7 @@ public class posttest2 extends javax.swing.JFrame {
         });
 
         jPanel2.setBackground(new java.awt.Color(0, 255, 255));
-        jPanel2.setLayout(new java.awt.GridLayout());
+        jPanel2.setLayout(new java.awt.GridLayout(1, 0));
 
         panelExit.setBackground(new java.awt.Color(0, 255, 255));
         panelExit.setText("EXIT");
@@ -217,12 +222,6 @@ public class posttest2 extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(pekerjaan))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(status))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(gd)
@@ -281,7 +280,12 @@ public class posttest2 extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 6, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(6, 6, 6)
-                                .addComponent(txttem2, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(txttem2, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(pekerjaan)
+                            .addComponent(status))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(186, Short.MAX_VALUE)
@@ -495,6 +499,10 @@ public class posttest2 extends javax.swing.JFrame {
         System.exit(0);
         
     }//GEN-LAST:event_panelExitActionPerformed
+
+    private void txtstActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtstActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtstActionPerformed
 
     /**
      * @param args the command line arguments
