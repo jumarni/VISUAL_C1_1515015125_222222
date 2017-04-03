@@ -29,12 +29,563 @@ public class posttest extends javax.swing.JFrame {
 
         JK = new javax.swing.ButtonGroup();
         KWN = new javax.swing.ButtonGroup();
+        conten = new javax.swing.JPanel();
+        Home = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        Form_ktp = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        nama = new javax.swing.JLabel();
+        tempat = new javax.swing.JLabel();
+        jk = new javax.swing.JLabel();
+        alamat = new javax.swing.JLabel();
+        rr = new javax.swing.JLabel();
+        kd = new javax.swing.JLabel();
+        kecamatan = new javax.swing.JLabel();
+        kota = new javax.swing.JLabel();
+        agama = new javax.swing.JLabel();
+        status = new javax.swing.JLabel();
+        gd = new javax.swing.JLabel();
+        pekerjaan = new javax.swing.JLabel();
+        txtnm = new javax.swing.JTextField();
+        txttem = new javax.swing.JTextField();
+        txtpria = new javax.swing.JRadioButton();
+        txtwanita = new javax.swing.JRadioButton();
+        txtal = new javax.swing.JTextField();
+        txtpj = new javax.swing.JTextField();
+        txtkc = new javax.swing.JTextField();
+        txtkd = new javax.swing.JTextField();
+        txtr = new javax.swing.JTextField();
+        txtkt = new javax.swing.JTextField();
+        jLabel17 = new javax.swing.JLabel();
+        txtw = new javax.swing.JTextField();
+        txtag = new javax.swing.JComboBox<String>();
+        txtst = new javax.swing.JComboBox<String>();
+        txtgd = new javax.swing.JComboBox<String>();
+        txtwna = new javax.swing.JRadioButton();
+        txtwni = new javax.swing.JRadioButton();
+        breset = new javax.swing.JButton();
+        bregister = new javax.swing.JButton();
+        kewarganegaraan = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        txttem2 = new javax.swing.JTextField();
+        Hider = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        footer = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        right = new javax.swing.JPanel();
+        left = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+
+        conten.setBackground(new java.awt.Color(153, 255, 204));
+        conten.setLayout(new java.awt.CardLayout());
+
+        Home.setBackground(new java.awt.Color(0, 51, 153));
+
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel3.setText("HOME");
+
+        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Jumarny\\Desktop\\20160506_124601.jpg")); // NOI18N
+        jButton2.setText("jButton2");
+
+        javax.swing.GroupLayout HomeLayout = new javax.swing.GroupLayout(Home);
+        Home.setLayout(HomeLayout);
+        HomeLayout.setHorizontalGroup(
+            HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(HomeLayout.createSequentialGroup()
+                .addComponent(jLabel4)
+                .addGap(265, 265, 265)
+                .addComponent(jLabel3)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(HomeLayout.createSequentialGroup()
+                .addGap(32, 32, 32)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(62, Short.MAX_VALUE))
+        );
+        HomeLayout.setVerticalGroup(
+            HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(HomeLayout.createSequentialGroup()
+                .addGroup(HomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(HomeLayout.createSequentialGroup()
+                        .addGap(46, 46, 46)
+                        .addComponent(jLabel4))
+                    .addGroup(HomeLayout.createSequentialGroup()
+                        .addGap(37, 37, 37)
+                        .addComponent(jLabel3)))
+                .addGap(18, 18, 18)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 333, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 56, Short.MAX_VALUE))
+        );
+
+        conten.add(Home, "card2");
+
+        Form_ktp.setBackground(new java.awt.Color(255, 204, 153));
+
+        jLabel6.setBackground(new java.awt.Color(255, 204, 153));
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel6.setText("FORM ISIAN");
+
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel7.setText("FORM KARTU TANDA PENDUDUK");
+
+        nama.setText("Nama :");
+
+        tempat.setText("Tempat/Tanggal Lahir :");
+
+        jk.setText("Jenis Kelamin :");
+
+        alamat.setText("Alamat :");
+
+        rr.setText("RT/RW :");
+
+        kd.setText("Kel/Desa :");
+
+        kecamatan.setText("Kecamatan :");
+
+        kota.setText("Kota :");
+
+        agama.setText("Agama :");
+
+        status.setText("Status :");
+
+        gd.setText("Golongan Darah :");
+
+        pekerjaan.setText("Pekerjaan :");
+
+        txttem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txttemActionPerformed(evt);
+            }
+        });
+
+        JK.add(txtpria);
+        txtpria.setText("Pria");
+
+        JK.add(txtwanita);
+        txtwanita.setText("Wanita");
+
+        txtpj.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtpjActionPerformed(evt);
+            }
+        });
+
+        jLabel17.setText("/");
+
+        txtag.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "ISLAM", "KRISTEN", "HINDU", "BUDHA", " " }));
+
+        txtst.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "KAWIN", "BELUM KAWIN", "JOMBLO", " " }));
+
+        txtgd.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "A", "B", "AB", "O" }));
+        txtgd.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtgdActionPerformed(evt);
+            }
+        });
+
+        KWN.add(txtwna);
+        txtwna.setText("WNA");
+
+        KWN.add(txtwni);
+        txtwni.setText("WNI");
+        txtwni.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtwniActionPerformed(evt);
+            }
+        });
+
+        breset.setText("Reset");
+        breset.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bresetActionPerformed(evt);
+            }
+        });
+
+        bregister.setText("Register");
+        bregister.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bregisterActionPerformed(evt);
+            }
+        });
+
+        kewarganegaraan.setText("Kewarganegaraan");
+
+        jLabel8.setText("/");
+
+        txttem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txttem2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Form_ktpLayout = new javax.swing.GroupLayout(Form_ktp);
+        Form_ktp.setLayout(Form_ktpLayout);
+        Form_ktpLayout.setHorizontalGroup(
+            Form_ktpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Form_ktpLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel7)
+                .addGap(206, 206, 206))
+            .addGroup(Form_ktpLayout.createSequentialGroup()
+                .addGroup(Form_ktpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Form_ktpLayout.createSequentialGroup()
+                        .addGroup(Form_ktpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jk)
+                            .addComponent(agama)
+                            .addComponent(status)
+                            .addComponent(gd)
+                            .addComponent(pekerjaan)
+                            .addComponent(tempat)
+                            .addComponent(nama)
+                            .addComponent(kewarganegaraan))
+                        .addGap(66, 66, 66)
+                        .addGroup(Form_ktpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(Form_ktpLayout.createSequentialGroup()
+                                .addGroup(Form_ktpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, Form_ktpLayout.createSequentialGroup()
+                                        .addComponent(txttem, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jLabel8))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, Form_ktpLayout.createSequentialGroup()
+                                        .addComponent(txtpria)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(txtwanita)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txttem2, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtag, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtst, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtgd, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(Form_ktpLayout.createSequentialGroup()
+                                .addGroup(Form_ktpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(Form_ktpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, Form_ktpLayout.createSequentialGroup()
+                                            .addComponent(txtwna)
+                                            .addGap(12, 12, 12)
+                                            .addComponent(txtwni))
+                                        .addComponent(txtpj, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(txtnm, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(Form_ktpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(Form_ktpLayout.createSequentialGroup()
+                                        .addGap(125, 125, 125)
+                                        .addComponent(breset)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(bregister))
+                                    .addGroup(Form_ktpLayout.createSequentialGroup()
+                                        .addGap(152, 152, 152)
+                                        .addGroup(Form_ktpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(alamat)
+                                            .addGroup(Form_ktpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, Form_ktpLayout.createSequentialGroup()
+                                                    .addComponent(kota)
+                                                    .addGap(49, 49, 49)
+                                                    .addComponent(txtkc, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, Form_ktpLayout.createSequentialGroup()
+                                                    .addComponent(kecamatan)
+                                                    .addGap(18, 18, 18)
+                                                    .addComponent(txtkt, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addGroup(Form_ktpLayout.createSequentialGroup()
+                                                    .addGroup(Form_ktpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addGroup(Form_ktpLayout.createSequentialGroup()
+                                                            .addComponent(kd)
+                                                            .addGap(29, 29, 29))
+                                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Form_ktpLayout.createSequentialGroup()
+                                                            .addComponent(rr)
+                                                            .addGap(37, 37, 37)))
+                                                    .addGroup(Form_ktpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addGroup(Form_ktpLayout.createSequentialGroup()
+                                                            .addComponent(txtr, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                            .addComponent(jLabel17)
+                                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                            .addComponent(txtw, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                        .addComponent(txtkd, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(txtal, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))))))))))
+                    .addComponent(jLabel6))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        Form_ktpLayout.setVerticalGroup(
+            Form_ktpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Form_ktpLayout.createSequentialGroup()
+                .addComponent(jLabel7)
+                .addGap(8, 8, 8)
+                .addComponent(jLabel6)
+                .addGap(18, 18, 18)
+                .addGroup(Form_ktpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Form_ktpLayout.createSequentialGroup()
+                        .addGroup(Form_ktpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(nama)
+                            .addComponent(txtnm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(Form_ktpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(tempat)
+                            .addComponent(txttem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel8)
+                            .addComponent(txttem2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(Form_ktpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jk)
+                            .addGroup(Form_ktpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(txtpria)
+                                .addComponent(txtwanita)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(Form_ktpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(agama)
+                            .addComponent(txtag, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(Form_ktpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(status)
+                            .addComponent(txtst, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(Form_ktpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(gd)
+                            .addComponent(txtgd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(Form_ktpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(pekerjaan)
+                            .addComponent(txtpj, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(Form_ktpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(kewarganegaraan)
+                            .addComponent(txtwna)
+                            .addComponent(txtwni)
+                            .addComponent(breset)
+                            .addComponent(bregister)))
+                    .addGroup(Form_ktpLayout.createSequentialGroup()
+                        .addGroup(Form_ktpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtal, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(alamat))
+                        .addGap(18, 18, 18)
+                        .addGroup(Form_ktpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(rr)
+                            .addComponent(txtr, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel17)
+                            .addComponent(txtw, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(Form_ktpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(kd, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtkd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(Form_ktpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtkc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(kota))
+                        .addGap(15, 15, 15)
+                        .addGroup(Form_ktpLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtkt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(kecamatan))))
+                .addContainerGap(153, Short.MAX_VALUE))
+        );
+
+        conten.add(Form_ktp, "card3");
+
+        getContentPane().add(conten, java.awt.BorderLayout.CENTER);
+
+        Hider.setBackground(new java.awt.Color(102, 204, 255));
+
+        jPanel1.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel1.setLayout(new java.awt.GridLayout(1, 0));
+
+        jButton1.setText("HOME");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1);
+
+        jButton3.setText("FORM KTP");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton3);
+
+        jButton4.setText("EXIT");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton4);
+
+        javax.swing.GroupLayout HiderLayout = new javax.swing.GroupLayout(Hider);
+        Hider.setLayout(HiderLayout);
+        HiderLayout.setHorizontalGroup(
+            HiderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(HiderLayout.createSequentialGroup()
+                .addGroup(HiderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(HiderLayout.createSequentialGroup()
+                        .addGap(88, 88, 88)
+                        .addComponent(jLabel1))
+                    .addGroup(HiderLayout.createSequentialGroup()
+                        .addGap(260, 260, 260)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(347, Short.MAX_VALUE))
+        );
+        HiderLayout.setVerticalGroup(
+            HiderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(HiderLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        getContentPane().add(Hider, java.awt.BorderLayout.PAGE_START);
+
+        footer.setBackground(new java.awt.Color(102, 204, 255));
+
+        jLabel2.setText("Jumarni Copyright @ 2017");
+
+        javax.swing.GroupLayout footerLayout = new javax.swing.GroupLayout(footer);
+        footer.setLayout(footerLayout);
+        footerLayout.setHorizontalGroup(
+            footerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, footerLayout.createSequentialGroup()
+                .addContainerGap(444, Short.MAX_VALUE)
+                .addComponent(jLabel2)
+                .addGap(285, 285, 285))
+        );
+        footerLayout.setVerticalGroup(
+            footerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(footerLayout.createSequentialGroup()
+                .addGap(32, 32, 32)
+                .addComponent(jLabel2)
+                .addContainerGap(54, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(footer, java.awt.BorderLayout.PAGE_END);
+
+        right.setBackground(new java.awt.Color(204, 204, 204));
+
+        javax.swing.GroupLayout rightLayout = new javax.swing.GroupLayout(right);
+        right.setLayout(rightLayout);
+        rightLayout.setHorizontalGroup(
+            rightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        rightLayout.setVerticalGroup(
+            rightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 461, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(right, java.awt.BorderLayout.LINE_END);
+
+        left.setBackground(new java.awt.Color(204, 204, 204));
+
+        javax.swing.GroupLayout leftLayout = new javax.swing.GroupLayout(left);
+        left.setLayout(leftLayout);
+        leftLayout.setHorizontalGroup(
+            leftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 182, Short.MAX_VALUE)
+        );
+        leftLayout.setVerticalGroup(
+            leftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 461, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(left, java.awt.BorderLayout.LINE_START);
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        Form_ktp.setVisible(true);  //Mengatur agar memperlihatkan panel Form_ktp
+        Home.setVisible(false);     //Mengatur agar menyembunyikan panel Form_ktp
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void txttemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txttemActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txttemActionPerformed
+
+    private void txtpjActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtpjActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtpjActionPerformed
+
+    private void txtgdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtgdActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtgdActionPerformed
+
+    private void txtwniActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtwniActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtwniActionPerformed
+
+    private void bresetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bresetActionPerformed
+        // TODO add your handling code here:
+        txtnm.setText("");      //Mengatur variable txtnm
+        txttem.setText("");     //Mengatur variable txttem
+        txttem2.setText("");    //Mengatur variable txttem2
+        txtal.setText("");      //Mengatur variable tal
+        JK.clearSelection();    //Mengatur variable JK
+        txtr.setText("");       //Mengatur variable txtr
+        txtw.setText("");       //Mengatur variable txtw
+        txtkd.setText("");      //Mengatur variable txtkd
+        txtkc.setText("");      //Mengatur variable txtkc
+        txtkt.setText("");      //Mengatur variable txtkt
+        txtpj.setText("");      //Mengatur variable txtpj
+        JK.clearSelection();    //Membuat vanel seleksi JK 
+        KWN.clearSelection();   //Membuat vanel seleksi KWN
+        txtag.setSelectedItem(null);    //Mengatur vanel seleksi pada txtag agar tidak dapat di isi
+        txtst.setSelectedItem(null);    //Mengatur vanel seleksi pada txtst agar tidak dapat di isi
+        txtgd.setSelectedItem(null);    //Mengatur vanel seleksi pada txtgd agar tidak dapat di isi
+
+    }//GEN-LAST:event_bresetActionPerformed
+
+    private void bregisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bregisterActionPerformed
+        // TODO add your handling code here:
+        String Nama,Tempat1,Tempat2,Jk=null,Alamat,Rr,Rw,Kd,Kecamatan,Kota,Agama,Status,Gd,Pekerjaan,Kg=null;   //Memberi tipe data pada nama" di bawah
+        Nama = txtnm.getText();         //panel Nama di tujukan ke variable txtnm
+        Tempat1 = txttem.getText();     //panel Tempat1 di tujukan ke variable txttem
+        Tempat2 = txttem2.getText();    //panel Tempat2 di tujukan ke variable txttem2
+        if (txtpria.isSelected())       //untuk melakukan penyeleksian pada Jk
+        {Jk = txtpria.getText();}
+        else if (txtwanita.isSelected())
+        {Jk = txtwanita.getText();}
+        Alamat = txtal.getText();       //panel Alamat di tujukan ke variable txtal
+        Rr = txtr.getText();            //panel Rr di tujukan ke variable txtr
+        Rw = txtw.getText();            //panel Rw di tujukan ke variable txtw
+        Kd = txtkd.getText();           //panel Kd di tujukan ke variable txtkd
+        Kecamatan = txtkc.getText();    //panel Kecamatan di tujukan ke variable txtkc
+        Kota = txtkt.getText();         //panel Kota di tujukan ke variable txtkt
+        Agama = txtag.getSelectedItem().toString();     //melakukan penyeleksian pada panel agama dan menuju ke variable txtag
+        Status = txtst.getSelectedItem().toString();    //melakukan penyeleksian pada panel Status dan menuju ke variable txtst
+        Gd = txtgd.getSelectedItem().toString();        //melakukan penyeleksian pada panel Gd dan menuju ke variable txtgd
+        Pekerjaan = txtpj.getText();    //panel Pekerjakan di tujukan ke variable txtpj
+        if (txtwna.isSelected())        //untuk melakukan penyeleksian pada variable txtwna
+        {Kg = txtwna.getText();}
+        else if (txtwni.isSelected())
+        {Kg = txtwni.getText();}
+
+        Output1 x=new Output1(Nama,Tempat1,Tempat2,Jk,Alamat,Rr,Rw,Kd,Kecamatan,Kota,Agama,Status,Gd,Pekerjaan,Kg);
+        x.setVisible(true);
+
+    }//GEN-LAST:event_bregisterActionPerformed
+
+    private void txttem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txttem2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txttem2ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        Home.setVisible(true);          //Mengatur agar memperlihatkan panel Home
+        Form_ktp.setVisible(false);     ////Mengatur agar menyembunyikan panel Form_ktp
+
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -72,7 +623,59 @@ public class posttest extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel Form_ktp;
+    private javax.swing.JPanel Hider;
+    private javax.swing.JPanel Home;
     private javax.swing.ButtonGroup JK;
     private javax.swing.ButtonGroup KWN;
+    private javax.swing.JLabel agama;
+    private javax.swing.JLabel alamat;
+    private javax.swing.JButton bregister;
+    private javax.swing.JButton breset;
+    private javax.swing.JPanel conten;
+    private javax.swing.JPanel footer;
+    private javax.swing.JLabel gd;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel jk;
+    private javax.swing.JLabel kd;
+    private javax.swing.JLabel kecamatan;
+    private javax.swing.JLabel kewarganegaraan;
+    private javax.swing.JLabel kota;
+    private javax.swing.JPanel left;
+    private javax.swing.JLabel nama;
+    private javax.swing.JLabel pekerjaan;
+    private javax.swing.JPanel right;
+    private javax.swing.JLabel rr;
+    private javax.swing.JLabel status;
+    private javax.swing.JLabel tempat;
+    private javax.swing.JComboBox<String> txtag;
+    private javax.swing.JTextField txtal;
+    private javax.swing.JComboBox<String> txtgd;
+    private javax.swing.JTextField txtkc;
+    private javax.swing.JTextField txtkd;
+    private javax.swing.JTextField txtkt;
+    private javax.swing.JTextField txtnm;
+    private javax.swing.JTextField txtpj;
+    private javax.swing.JRadioButton txtpria;
+    private javax.swing.JTextField txtr;
+    private javax.swing.JComboBox<String> txtst;
+    private javax.swing.JTextField txttem;
+    private javax.swing.JTextField txttem2;
+    private javax.swing.JTextField txtw;
+    private javax.swing.JRadioButton txtwanita;
+    private javax.swing.JRadioButton txtwna;
+    private javax.swing.JRadioButton txtwni;
     // End of variables declaration//GEN-END:variables
 }
