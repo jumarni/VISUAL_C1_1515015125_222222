@@ -121,7 +121,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Century" size="24" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Rumah Sakit Tenggiri"/>
+            <Property name="text" type="java.lang.String" value="Rumah Sakit Sebatik"/>
           </Properties>
         </Component>
       </SubComponents>

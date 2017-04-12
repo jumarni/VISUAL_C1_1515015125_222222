@@ -127,7 +127,7 @@ public class FormRumahSakit extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(0, 51, 204));
 
         jLabel1.setFont(new java.awt.Font("Century", 1, 24)); // NOI18N
-        jLabel1.setText("Rumah Sakit Tenggiri");
+        jLabel1.setText("Rumah Sakit Sebatik");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
